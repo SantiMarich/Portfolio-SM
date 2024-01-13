@@ -210,3 +210,31 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== CHANGE LANGUAGUE ====================*/
+
+// Añade esta función para cambiar el idioma
+function changeLanguage() {
+  const currentPath = window.location.pathname;
+  const newPath = currentPath.includes("/index-en.html")
+    ? "/index-es.html"
+    : "/index-en.html";
+  window.location.href = newPath;
+}
+
+// Añade una función para obtener el idioma actual de la URL
+function getCurrentLanguage() {
+  const currentPath = window.location.pathname;
+  return currentPath.includes("/index-en.html") ? "SP" : "EN";
+}
+
+// Añade un event listener al botón de cambio de idioma
+const languageToggle = document.getElementById("language-toggle");
+
+if (languageToggle) {
+  // Configura el texto del botón basado en el idioma actual
+  languageToggle.textContent = getCurrentLanguage();
+
+  // Añade un event listener al botón de cambio de idioma
+  languageToggle.addEventListener("click", changeLanguage);
+}

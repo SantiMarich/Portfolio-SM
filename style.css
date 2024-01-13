@@ -94,9 +94,33 @@ body.dark-theme {
   color: var(--title-color);
   margin-right: var(--mb-1);
   cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .change-theme:hover {
+  color: var(--first-color);
+}
+
+/*========== Button Spanish/English ==========*/
+
+.button-language {
+  font-size: 0.75rem;
+  padding-left: 1.5rem;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  font-style: normal;
+}
+.language-toggle {
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.language-toggle:hover {
   color: var(--first-color);
 }
 
