@@ -216,16 +216,16 @@ themeButton.addEventListener("click", () => {
 // Añade esta función para cambiar el idioma
 function changeLanguage() {
   const currentPath = window.location.pathname;
-  const newPath = currentPath.includes("/index-en.html")
+  const newPath = currentPath.includes("/index.html")
     ? "/index-es.html"
-    : "/index-en.html";
+    : "/index.html";
   window.location.href = newPath;
 }
 
 // Añade una función para obtener el idioma actual de la URL
 function getCurrentLanguage() {
   const currentPath = window.location.pathname;
-  return currentPath.includes("/index-en.html") ? "SP" : "EN";
+  return currentPath.includes("/index.html") ? "SP" : "EN";
 }
 
 // Añade un event listener al botón de cambio de idioma
