@@ -1,7 +1,6 @@
 {
-  "build": {
-    "env": {
-      "NODE_VERSION": "22"
-    }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/**": { "runtime": "vercel/node@22.x" }
   }
 }
